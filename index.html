@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="calc">
+        <p style="color: white">calc</p>
+        <p style="color: white">THEME</p>
+      </div>
+
+      <input type="text" id="display" disabled />
+
+      <div class="container2">
+        <div class="row1">
+          <button onclick="appendNumber('7')" class="num">7</button>
+          <button onclick="appendNumber('8')" class="num">8</button>
+          <button onclick="appendNumber('9')" class="num">9</button>
+          <button onclick="backspace()" class="del">DEL</button>
+        </div>
+        <div class="row2">
+          <button onclick="appendNumber('4')" class="num">4</button>
+          <button onclick="appendNumber('5')" class="num">5</button>
+          <button onclick="appendNumber('6')" class="num">6</button>
+          <button onclick="chooseOperation('+')" class="num">+</button>
+        </div>
+        <div class="row3">
+          <button onclick="appendNumber('1')" class="num">1</button>
+          <button onclick="appendNumber('2')" class="num">2</button>
+          <button onclick="appendNumber('3')" class="num">3</button>
+          <button onclick="chooseOperation('-')" class="num">-</button>
+        </div>
+        <div class="row4">
+          <button onclick="chooseOperation('.')" class="num">.</button>
+          <button onclick="appendNumber('0')" class="num">0</button>
+          <button onclick="chooseOperation('/')" class="num">/</button>
+          <button onclick="chooseOperation('*')" class="num">x</button>
+        </div>
+        <div class="row5">
+          <button onclick="clearDisplay()" class="reset">RESET</button>
+          <button onclick="calculate()" class="equal">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
